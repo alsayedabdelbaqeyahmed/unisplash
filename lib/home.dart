@@ -36,7 +36,7 @@ class Home extends StatelessWidget {
             top: size.height * 0.82,
             right: size.width * 0.03,
             child: TextButton(
-              onPressed: () => Navigator.push(
+              onPressed: () => Navigator.pushReplacement(
                 context,
                 AnimatedPageRoute(
                   beginDx: 10.0,

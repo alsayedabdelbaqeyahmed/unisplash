@@ -17,6 +17,7 @@ class PhotoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return GestureDetector(
       onTap: () => Navigator.push(
         context,
@@ -48,10 +49,13 @@ class PhotoCard extends StatelessWidget {
       child: Hero(
         tag: Key('${photo.id}_$index'),
         child: Container(
-          margin: const EdgeInsets.only(left: 15),
+          margin: EdgeInsetsDirectional.only(
+            start: size.width * 0.01,
+            end: size.width * 0.01,
+          ),
           decoration: BoxDecoration(
             color: Colors.grey[50],
-            borderRadius: BorderRadius.circular(10.0),
+            borderRadius: BorderRadius.circular(size.width * 0.03),
             boxShadow: [
               BoxShadow(
                 color: Colors.black26,

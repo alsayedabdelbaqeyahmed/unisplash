@@ -61,30 +61,34 @@ class _PhotoViewerScreenState extends State<PhotoViewerScreen> {
                         ),
                       ),
                       Positioned(
-                        right: 20,
-                        bottom: 0,
+                        right: size.width * 0.06,
+                        bottom: size.height * 0.01,
                         child: CircleAvatar(
-                          backgroundColor: Colors.transparent,
-                          child: IconButton(
-                            onPressed: () {
-                              SaveImageToGallery().save(
-                                dataRecived.photos[index2].url,
-                                context,
-                                size,
-                              );
-                            },
-                            icon: Icon(
-                              Icons.download,
-                              color: Colors.white,
+                          backgroundColor: Colors.white,
+                          radius: size.width * 0.06,
+                          child: Center(
+                            child: IconButton(
+                              onPressed: () {
+                                SaveImageToGallery().save(
+                                  dataRecived.photos[index2].url,
+                                  context,
+                                  size,
+                                );
+                              },
+                              icon: Icon(
+                                Icons.download,
+                                color: Colors.black,
+                                size: size.height * 0.04,
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: size.height * .03),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.all(size.width * 0.025),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -93,38 +97,37 @@ class _PhotoViewerScreenState extends State<PhotoViewerScreen> {
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 15,
+                            fontSize: size.height * 0.02,
                           ),
                         ),
-                        SizedBox(height: 20),
+                        SizedBox(height: size.height * .015),
                         Text(
                           dataRecived.photos[index2].description != null
                               ? '${dataRecived.photos[index2].description}'
                               : 'Sorry there is no description',
                           style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
-                          ),
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: size.height * 0.019),
                         ),
-                        SizedBox(height: 20),
+                        SizedBox(height: size.height * .015),
                         Row(
                           children: [
                             CircleAvatar(
-                              radius: 16.0,
+                              radius: size.width * 0.05,
                               backgroundColor: Colors.grey[100],
                               backgroundImage: CachedNetworkImageProvider(
                                 dataRecived.photos[index2].user.profileImageUrl,
                               ),
                             ),
-                            SizedBox(width: 10),
+                            SizedBox(width: size.width * 0.02),
                             GestureDetector(
                               child: Text(
                                 '${dataRecived.photos[index2].user.name}',
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 15,
+                                  fontSize: size.width * 0.04,
                                   decoration: TextDecoration.underline,
                                 ),
                               ),

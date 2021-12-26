@@ -29,9 +29,11 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Photo Search',
         theme: ThemeData(
+          brightness: Brightness.light,
           primarySwatch: Colors.deepOrange,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
+        darkTheme: ThemeData(brightness: Brightness.dark),
         home: Home(),
         routes: {
           PhotoScreen.routeNamess: (ctx) => PhotoScreen(),

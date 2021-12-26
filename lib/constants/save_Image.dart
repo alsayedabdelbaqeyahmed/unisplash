@@ -5,10 +5,6 @@ import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class SaveImageToGallery {
-  // String url;
-  // BuildContext context;
-  // Size size;
-
   SnackBar _snakBars(String text, Size size) {
     return SnackBar(
       content: Text(
