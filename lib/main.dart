@@ -34,7 +34,6 @@ class MyApp extends StatelessWidget {
         ),
         home: Home(),
         routes: {
-          PhotoViewerScreen.routeNames: (ctx) => PhotoViewerScreen(),
           PhotoScreen.routeNamess: (ctx) => PhotoScreen(),
         },
       ),

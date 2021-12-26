@@ -29,6 +29,11 @@ dependencies:
   http:
   provider:
   url_launcher:
+  path_provider:
+  path:
+  image_gallery_saver:
+  dio:
+  permission_handler:
 
 dev_dependencies:
   flutter_test:

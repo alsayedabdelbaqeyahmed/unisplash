@@ -46,6 +46,10 @@ cupertino_icons
 2.12
 file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/
 file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.4/lib/
+dio
+2.12
+file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.4/
+file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.4/lib/
 equatable
 2.12
 file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.3/
@@ -78,6 +82,10 @@ http_parser
 2.12
 file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0/
 file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0/lib/
+image_gallery_saver
+2.12
+file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/image_gallery_saver-1.7.1/
+file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/image_gallery_saver-1.7.1/lib/
 js
 2.12
 file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3/
@@ -134,6 +142,14 @@ pedantic
 2.12
 file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1/
 file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1/lib/
+permission_handler
+2.12
+file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.3.0/
+file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.3.0/lib/
+permission_handler_platform_interface
+2.14
+file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.0/
+file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.0/lib/
 platform
 2.12
 file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.1.0/

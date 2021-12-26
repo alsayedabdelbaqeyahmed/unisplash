@@ -5,13 +5,13 @@ import 'package:photo_search_app/constants/api.dart';
 import 'package:photo_search_app/models/photo.dart';
 
 class SearchPhotoProvider with ChangeNotifier {
-  static const int numberPerPage = 10;
+  static const int numberPerPage = 100;
   List<Photo> _photos = [];
   List<Photo> get photos {
     return [..._photos];
   }
 
-  Future<List<Photo>> searchPhoto({String query, int page = 1}) async {
+  Future<List<Photo>> searchPhoto({String query, int page = 5}) async {
     final url =
         'https://api.unsplash.com/search/photos?client_id=$unSplashapi&page=$page&per_page=$numberPerPage&query=$query';
 

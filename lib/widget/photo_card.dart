@@ -18,12 +18,31 @@ class PhotoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.of(context).pushNamed(
-        PhotoViewerScreen.routeNames,
-        arguments: PhotoCard(
-          index: this.index,
-          photo: this.photo,
-          photos: this.photos,
+      onTap: () => Navigator.push(
+        context,
+        PageRouteBuilder(
+          settings: RouteSettings(
+            arguments: PhotoCard(
+              photo: this.photo,
+              index: this.index,
+              photos: this.photos,
+            ),
+          ),
+          transitionDuration: Duration(seconds: 1),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            final begin = Offset(10.0, 10.0);
+            final end = Offset(0, 0);
+
+            var tween = Tween(begin: begin, end: end)
+                .chain(CurveTween(curve: Curves.ease));
+
+            return SlideTransition(
+              position: animation.drive(tween),
+              child: child,
+            );
+          },
+          pageBuilder: (context, animation, secondaryAnimation) =>
+              PhotoViewerScreen(),
         ),
       ),
       child: Hero(

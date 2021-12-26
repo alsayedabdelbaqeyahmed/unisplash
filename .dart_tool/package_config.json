@@ -68,6 +68,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dio",
+      "rootUri": "file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "equatable",
       "rootUri": "file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.3",
       "packageUri": "lib/",
@@ -130,6 +136,12 @@
     {
       "name": "http_parser",
       "rootUri": "file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "image_gallery_saver",
+      "rootUri": "file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/image_gallery_saver-1.7.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -216,6 +228,18 @@
       "rootUri": "file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "permission_handler",
+      "rootUri": "file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "permission_handler_platform_interface",
+      "rootUri": "file:///Users/sayed/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "platform",
@@ -392,7 +416,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-12-19T18:57:57.185603Z",
+  "generated": "2021-12-25T20:01:03.175184Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }
