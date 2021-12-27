@@ -20,7 +20,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
-        backgroundColor: Colors.black,
+        //backgroundColor: Colors.black,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsetsDirectional.only(
