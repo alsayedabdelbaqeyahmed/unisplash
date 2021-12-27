@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:path/path.dart';
+import 'package:photo_search_app/providers/dark_theme.dart';
+import 'package:provider/provider.dart';
 
 class MyThemes {
   static final darkTheme = ThemeData(
@@ -14,4 +17,13 @@ class MyThemes {
     colorScheme: ColorScheme.light(),
     iconTheme: IconThemeData(color: Colors.red, opacity: 0.8),
   );
+
+  static Color fontColor(BuildContext context) {
+    if (Provider.of<ChangeTheme>(context, listen: false).themeMode ==
+        ThemeMode.dark) {
+      return Colors.white;
+    } else {
+      return Colors.black;
+    }
+  }
 }

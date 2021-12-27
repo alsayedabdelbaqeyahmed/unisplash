@@ -1,7 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:photo_search_app/constants/animated_page-route.dart';
 import 'package:photo_search_app/constants/save_Image.dart';
+import 'package:photo_search_app/providers/dark_theme.dart';
+import 'package:photo_search_app/screens/photo_screen.dart';
 import 'package:photo_search_app/widget/photo_card.dart';
+import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class PhotoViewerScreen extends StatefulWidget {

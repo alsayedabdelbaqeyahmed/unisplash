@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:photo_search_app/providers/dark_theme.dart';
+import 'package:photo_search_app/providers/myTheme.dart';
 import 'package:photo_search_app/providers/search_photo_provider.dart';
 import 'package:photo_search_app/widget/home_app_bar_widget.dart';
 import 'package:photo_search_app/widget/photo_card.dart';
@@ -17,10 +19,10 @@ class _PhotoScreenState extends State<PhotoScreen> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
-        //backgroundColor: Colors.black,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsetsDirectional.only(
@@ -35,9 +37,14 @@ class _PhotoScreenState extends State<PhotoScreen> {
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'Search',
-                    fillColor: Colors.black,
-                    filled: true,
-                    hintStyle: TextStyle(color: Colors.white),
+                    fillColor: MyThemes.fontColor(context),
+                    filled: Provider.of<ChangeTheme>(context).themeMode ==
+                            ThemeMode.dark
+                        ? true
+                        : false,
+                    hintStyle: TextStyle(
+                      color: Colors.black,
+                    ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(size.width * 0.07),
                       borderSide: BorderSide(color: Color(0xff7E8EAA)),

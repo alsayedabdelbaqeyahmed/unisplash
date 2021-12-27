@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:photo_search_app/constants/animated_page-route.dart';
 import 'package:photo_search_app/home.dart';
+import 'package:photo_search_app/providers/dark_theme.dart';
+import 'package:photo_search_app/providers/myTheme.dart';
 import 'package:photo_search_app/widget/change_theme_button_widget.dart';
+import 'package:provider/provider.dart';
 
 class HomeAppBarWidget extends StatelessWidget {
   const HomeAppBarWidget({Key key}) : super(key: key);
@@ -9,6 +12,7 @@ class HomeAppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -31,7 +35,7 @@ class HomeAppBarWidget extends StatelessWidget {
               ),
               icon: Icon(
                 Icons.arrow_back,
-                color: Colors.white,
+                color: MyThemes.fontColor(context),
               ),
             ),
             ChangeThemeButtonWidget(),
@@ -42,7 +46,7 @@ class HomeAppBarWidget extends StatelessWidget {
           child: Text(
             'Unsplash',
             style: TextStyle(
-              color: Colors.white,
+              color: MyThemes.fontColor(context),
               fontSize: size.width * 0.07,
             ),
           ),
@@ -53,7 +57,7 @@ class HomeAppBarWidget extends StatelessWidget {
           child: Text(
             'Beautiful, free Photos.',
             style: TextStyle(
-              color: Colors.white,
+              color: MyThemes.fontColor(context),
               fontSize: size.width * 0.03,
             ),
           ),
