@@ -32,6 +32,10 @@
         "source": "/Users/sayed/.gradle/caches/transforms-2/files-2.1/f90299ff420036e311b84c728802cd71/core-1.6.0/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
     {
+        "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-xxhdpi_splash.png.flat",
+        "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/drawable-xxhdpi/splash.png"
+    },
+    {
         "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat",
         "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/drawable/launch_background.xml"
     },
@@ -48,8 +52,20 @@
         "source": "/Users/sayed/.gradle/caches/transforms-2/files-2.1/f90299ff420036e311b84c728802cd71/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
     },
     {
+        "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-v21_background.png.flat",
+        "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/drawable-v21/background.png"
+    },
+    {
+        "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable_background.png.flat",
+        "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/drawable/background.png"
+    },
+    {
         "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-hdpi_splash.png.flat",
+        "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/drawable-hdpi/splash.png"
     },
     {
         "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -64,12 +80,24 @@
         "source": "/Users/sayed/.gradle/caches/transforms-2/files-2.1/f90299ff420036e311b84c728802cd71/core-1.6.0/res/drawable/notification_bg_low.xml"
     },
     {
+        "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-mdpi_splash.png.flat",
+        "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/drawable-mdpi/splash.png"
+    },
+    {
         "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/Users/sayed/.gradle/caches/transforms-2/files-2.1/f90299ff420036e311b84c728802cd71/core-1.6.0/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
+        "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-v21_launch_background.xml.flat",
+        "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/drawable-v21/launch_background.xml"
+    },
+    {
         "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "/Users/sayed/.gradle/caches/transforms-2/files-2.1/f90299ff420036e311b84c728802cd71/core-1.6.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-xxxhdpi_splash.png.flat",
+        "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/drawable-xxxhdpi/splash.png"
     },
     {
         "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -142,6 +170,10 @@
     {
         "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
         "source": "/Users/sayed/.gradle/caches/transforms-2/files-2.1/f90299ff420036e311b84c728802cd71/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/drawable-xhdpi_splash.png.flat",
+        "source": "/Users/sayed/Desktop/Flutter_App/photo_search_app/android/app/src/main/res/drawable-xhdpi/splash.png"
     },
     {
         "merged": "/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",

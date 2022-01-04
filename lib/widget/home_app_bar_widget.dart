@@ -35,7 +35,7 @@ class HomeAppBarWidget extends StatelessWidget {
               ),
               icon: Icon(
                 Icons.arrow_back,
-                color: MyThemes.fontColor(context),
+                color: Theme.of(context).primaryColor,
               ),
             ),
             ChangeThemeButtonWidget(),
@@ -46,7 +46,7 @@ class HomeAppBarWidget extends StatelessWidget {
           child: Text(
             'Unsplash',
             style: TextStyle(
-              color: MyThemes.fontColor(context),
+              color: Theme.of(context).primaryColor,
               fontSize: size.width * 0.07,
             ),
           ),
@@ -57,7 +57,7 @@ class HomeAppBarWidget extends StatelessWidget {
           child: Text(
             'Beautiful, free Photos.',
             style: TextStyle(
-              color: MyThemes.fontColor(context),
+              color: Theme.of(context).primaryColor,
               fontSize: size.width * 0.03,
             ),
           ),

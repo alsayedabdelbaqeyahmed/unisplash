@@ -37,11 +37,8 @@ class _PhotoScreenState extends State<PhotoScreen> {
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'Search',
-                    fillColor: MyThemes.fontColor(context),
-                    filled: Provider.of<ChangeTheme>(context).themeMode ==
-                            ThemeMode.dark
-                        ? true
-                        : false,
+                    fillColor: Colors.white,
+                    filled: true,
                     hintStyle: TextStyle(
                       color: Colors.black,
                     ),
