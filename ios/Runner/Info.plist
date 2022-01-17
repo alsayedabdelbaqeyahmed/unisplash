@@ -24,6 +24,8 @@
 		<true/>
 		<key>UILaunchStoryboardName</key>
 		<string>LaunchScreen</string>
+		<key>NSPhotoLibraryAddUsageDescription</key>
+		<string>describe why your app needs permission for the photo library</string>
 		<key>UIMainStoryboardFile</key>
 		<string>Main</string>
 		<key>UISupportedInterfaceOrientations</key>

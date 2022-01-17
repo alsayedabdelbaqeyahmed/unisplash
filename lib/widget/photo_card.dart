@@ -9,10 +9,10 @@ class PhotoCard extends StatelessWidget {
   final List<Photo> photos;
 
   const PhotoCard({
-    Key key,
-    @required this.photo,
-    @required this.photos,
-    @required this.index,
+    Key? key,
+    required this.photo,
+    required this.photos,
+    required this.index,
   }) : super(key: key);
 
   @override
@@ -64,7 +64,7 @@ class PhotoCard extends StatelessWidget {
               ),
             ],
             image: DecorationImage(
-              image: CachedNetworkImageProvider(photo.url),
+              image: CachedNetworkImageProvider(photo.url!),
               fit: BoxFit.cover,
             ),
           ),

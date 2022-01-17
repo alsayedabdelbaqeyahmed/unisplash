@@ -1,21 +1,20 @@
-import 'package:flutter/foundation.dart';
-
 import 'user.dart';
 
 class Photo {
-  final String id;
-  final String url;
-  final String description;
+  final String? id;
+  final String? url;
+  final String? description;
   final User user;
 
   const Photo({
-    @required this.id,
-    @required this.url,
-    @required this.description,
-    @required this.user,
+    required this.id,
+    required this.url,
+    required this.description,
+    required this.user,
   });
 
   factory Photo.fromJson(Map<String, dynamic> e) {
+    // ignore: unnecessary_null_comparison
     if (e != null) {
       return Photo(
         id: e['id'],
@@ -26,6 +25,7 @@ class Photo {
         ),
       );
     }
-    return null;
+    // ignore: null_check_always_fails
+    return null!;
   }
 }

@@ -1,20 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:photo_search_app/constants/animated_page-route.dart';
-import 'package:photo_search_app/home.dart';
-import 'package:photo_search_app/providers/dark_theme.dart';
-import 'package:photo_search_app/providers/myTheme.dart';
+import 'package:photo_search_app/screens/home.dart';
+
 import 'package:photo_search_app/widget/change_theme_button_widget.dart';
-import 'package:provider/provider.dart';
 
 class HomeAppBarWidget extends StatelessWidget {
-  const HomeAppBarWidget({Key key}) : super(key: key);
+  final double? mainFontSize;
+  final double? secondFontSize;
+  final double? iconSize;
+
+  const HomeAppBarWidget({
+    Key? key,
+    required this.mainFontSize,
+    required this.secondFontSize,
+    required this.iconSize,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.baseline,
+      textBaseline: TextBaseline.alphabetic,
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -36,6 +44,7 @@ class HomeAppBarWidget extends StatelessWidget {
               icon: Icon(
                 Icons.arrow_back,
                 color: Theme.of(context).primaryColor,
+                size: iconSize,
               ),
             ),
             ChangeThemeButtonWidget(),
@@ -47,7 +56,7 @@ class HomeAppBarWidget extends StatelessWidget {
             'Unsplash',
             style: TextStyle(
               color: Theme.of(context).primaryColor,
-              fontSize: size.width * 0.07,
+              fontSize: mainFontSize,
             ),
           ),
         ),
@@ -58,7 +67,7 @@ class HomeAppBarWidget extends StatelessWidget {
             'Beautiful, free Photos.',
             style: TextStyle(
               color: Theme.of(context).primaryColor,
-              fontSize: size.width * 0.03,
+              fontSize: secondFontSize,
             ),
           ),
         ),

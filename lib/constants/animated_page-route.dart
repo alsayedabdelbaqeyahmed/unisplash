@@ -9,13 +9,13 @@ class AnimatedPageRoute extends PageRouteBuilder {
   final Curve curve;
   final Duration duration;
   AnimatedPageRoute({
-    @required this.widget,
-    @required this.beginDx,
-    @required this.beginDy,
-    @required this.endDx,
-    @required this.endDy,
-    @required this.curve,
-    @required this.duration,
+    required this.widget,
+    required this.beginDx,
+    required this.beginDy,
+    required this.endDx,
+    required this.endDy,
+    required this.curve,
+    required this.duration,
   }) : super(
           transitionDuration: duration,
           transitionsBuilder: (context, animation, secondaryAnimation, child) {

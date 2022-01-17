@@ -1,95 +1,51 @@
 import 'package:flutter/material.dart';
-import 'package:photo_search_app/providers/dark_theme.dart';
-import 'package:photo_search_app/providers/myTheme.dart';
-import 'package:photo_search_app/providers/search_photo_provider.dart';
-import 'package:photo_search_app/widget/home_app_bar_widget.dart';
-import 'package:photo_search_app/widget/photo_card.dart';
-import 'package:provider/provider.dart';
 
-class PhotoScreen extends StatefulWidget {
-  PhotoScreen({Key key}) : super(key: key);
+import 'package:photo_search_app/widget/photo_screen_widget.dart';
+
+class PhotoScreen extends StatelessWidget {
   static const routeNamess = 'photoViewer';
+  const PhotoScreen({Key? key}) : super(key: key);
 
-  @override
-  _PhotoScreenState createState() => _PhotoScreenState();
-}
-
-class _PhotoScreenState extends State<PhotoScreen> {
-  String _query = 'programming';
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final islandScape =
+        MediaQuery.of(context).orientation == Orientation.landscape;
 
-    return GestureDetector(
-      onTap: () => FocusScope.of(context).unfocus(),
-      child: Scaffold(
-        body: SafeArea(
-          child: Padding(
-            padding: EdgeInsetsDirectional.only(
-              start: size.width * 0.03,
-              end: size.width * 0.03,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                HomeAppBarWidget(),
-                SizedBox(height: size.height * .02),
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Search',
-                    fillColor: Colors.white,
-                    filled: true,
-                    hintStyle: TextStyle(
-                      color: Colors.black,
-                    ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(size.width * 0.07),
-                      borderSide: BorderSide(color: Color(0xff7E8EAA)),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(size.width * 0.07),
-                      borderSide: BorderSide(color: Color(0xff7E8EAA)),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(size.width * 0.07),
-                      borderSide: BorderSide(color: Color(0xff7E8EAA)),
-                    ),
+    return Scaffold(
+      body: LayoutBuilder(
+        builder: (context, constrain) {
+          return islandScape
+              ? SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      PhotoScreenWidget(
+                        appBarSizedBox: constrain.maxHeight * 0.03,
+                        crossAxissAccount: 4,
+                        childAspectRatio: constrain.maxWidth * 0.001,
+                        crossAxisSpacing: constrain.maxWidth * 0.002,
+                        mainAxisSpacing: constrain.maxWidth * 0.02,
+                        searchBarSizedBox: constrain.maxHeight * 0.045,
+                        shrankWrap: true,
+                        iconSize: constrain.maxWidth * 0.045,
+                        mainFontSize: constrain.maxWidth * 0.04,
+                        secondFontSize: constrain.maxWidth * 0.02,
+                      ),
+                    ],
                   ),
-                  onSubmitted: (val) => val.trim().isNotEmpty
-                      ? setState(() => _query = val.trim())
-                      : _query = 'programming',
-                ),
-                SizedBox(height: size.height * .02),
-                Expanded(
-                  child: Consumer<SearchPhotoProvider>(
-                    builder: (ctx, data, child) {
-                      return FutureBuilder(
-                        future: data.searchPhoto(query: _query),
-                        builder: (ctx, snapShot) => GridView.builder(
-                          gridDelegate:
-                              const SliverGridDelegateWithFixedCrossAxisCount(
-                            childAspectRatio: 0.8,
-                            mainAxisSpacing: 15,
-                            crossAxisSpacing: 15,
-                            crossAxisCount: 2,
-                          ),
-                          itemBuilder: (ctx, index) {
-                            return PhotoCard(
-                              photo: data.photos[index],
-                              photos: data.photos,
-                              index: index,
-                            );
-                          },
-                          itemCount: data.photos.length,
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
+                )
+              : PhotoScreenWidget(
+                  appBarSizedBox: constrain.maxHeight * 0.015,
+                  crossAxissAccount: 2,
+                  childAspectRatio: constrain.maxHeight * 0.0009,
+                  crossAxisSpacing: constrain.maxHeight * 0.009,
+                  mainAxisSpacing: constrain.maxHeight * 0.02,
+                  searchBarSizedBox: constrain.maxHeight * 0.02,
+                  shrankWrap: false,
+                  iconSize: constrain.maxHeight * 0.03,
+                  mainFontSize: constrain.maxHeight * 0.04,
+                  secondFontSize: constrain.maxHeight * 0.02,
+                );
+        },
       ),
     );
   }

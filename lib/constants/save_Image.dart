@@ -5,11 +5,11 @@ import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class SaveImageToGallery {
-  SnackBar _snakBars(String text, Size size) {
+  SnackBar _snakBars(String text, BoxConstraints size) {
     return SnackBar(
       content: Text(
         text,
-        style: TextStyle(fontSize: size.width * 0.04),
+        style: TextStyle(fontSize: size.maxWidth * 0.04),
         textAlign: TextAlign.center,
       ),
       duration: Duration(seconds: 2),
@@ -22,7 +22,7 @@ class SaveImageToGallery {
     ].request();
   }
 
-  save(String url, BuildContext context, Size size) async {
+  save(String url, BuildContext context, BoxConstraints size) async {
     _requestPermission();
     var appDocDir = await getTemporaryDirectory();
     String savePath = appDocDir.path + "/temp.gif";

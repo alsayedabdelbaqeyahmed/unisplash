@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:path/path.dart';
-import 'package:photo_search_app/providers/dark_theme.dart';
-import 'package:provider/provider.dart';
 
 class MyThemes {
   static final darkTheme = ThemeData(
