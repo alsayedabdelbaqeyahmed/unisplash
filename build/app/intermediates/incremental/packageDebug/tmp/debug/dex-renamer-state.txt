@@ -1,4 +1,4 @@
-#Sun Jan 09 13:20:44 EET 2022
+#Tue Jan 18 01:35:19 EET 2022
 base.0=/Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
