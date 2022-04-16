@@ -1,12 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.photo_search_app">
+    package="com.sayed.photo_search_app">
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:requestLegacyExternalStorage="true"
         android:name="io.flutter.app.FlutterApplication"
-        android:label="photo_search_app"
-        android:icon="@mipmap/ic_launcher">
+        android:label="unsplash"
+        android:icon="@mipmap/unsplash_dark">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

@@ -3,15 +3,15 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:photo_search_app/controller/providers/dark_theme.dart';
+import 'package:photo_search_app/controller/providers/myTheme.dart';
 
-import 'package:photo_search_app/screens/home.dart';
-import 'package:photo_search_app/providers/dark_theme.dart';
-import 'package:photo_search_app/providers/myTheme.dart';
-import 'package:photo_search_app/screens/photo_screen.dart';
+import 'package:photo_search_app/view/screens/home.dart';
+import 'package:photo_search_app/view/screens/photo_screen.dart';
 
 import 'package:provider/provider.dart';
 
-import 'providers/search_photo_provider.dart';
+import 'controller/providers/search_photo_provider.dart';
 
 void main() {
   EquatableConfig.stringify = kDebugMode;
