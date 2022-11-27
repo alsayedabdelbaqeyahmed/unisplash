@@ -111,31 +111,29 @@ class _PhotoScreenWidgetState extends State<PhotoScreenWidget> {
   }
 
   Widget photoGird() {
-    return Consumer<SearchPhotoProvider>(
-      builder: (ctx, data, child) {
-        return FutureBuilder(
-            future: data.getPhotoController(
-              query: Photo(query: _query),
-            ),
-            builder: (ctx, snapShot) {
-              return GridView.builder(
-                shrinkWrap: widget.shrankWrap!,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  childAspectRatio: widget.childAspectRatio!,
-                  mainAxisSpacing: widget.mainAxisSpacing!,
-                  crossAxisSpacing: widget.crossAxisSpacing!,
-                  crossAxisCount: widget.crossAxissAccount!,
-                ),
-                itemBuilder: (ctx, index) {
-                  return PhotoCard(
-                    photo: data.photo![index],
-                    photos: data.photo!,
-                    index: index,
-                  );
-                },
-                itemCount: data.photo!.length,
-              );
-            });
+    final data = Provider.of<SearchPhotoProvider>(context, listen: false);
+    return FutureBuilder(
+      future: data.getPhotoController(
+        query: Photo(query: _query),
+      ),
+      builder: (ctx, snapShot) {
+        return GridView.builder(
+          shrinkWrap: widget.shrankWrap!,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            childAspectRatio: widget.childAspectRatio!,
+            mainAxisSpacing: widget.mainAxisSpacing!,
+            crossAxisSpacing: widget.crossAxisSpacing!,
+            crossAxisCount: widget.crossAxissAccount!,
+          ),
+          itemBuilder: (ctx, index) {
+            return PhotoCard(
+              photo: data.photo![index],
+              photos: data.photo!,
+              index: index,
+            );
+          },
+          itemCount: data.photo!.length,
+        );
       },
     );
   }

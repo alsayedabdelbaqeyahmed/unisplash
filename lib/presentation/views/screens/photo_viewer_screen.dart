@@ -1,8 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:photo_search_app/domain/entities/save_photo.dart';
 import 'package:photo_search_app/presentation/style/app_string.dart';
 
-import 'package:photo_search_app/presentation/views/shared_widget.dart/save_Image.dart';
+import 'package:photo_search_app/presentation/controller/save_Image.dart';
 
 import 'package:photo_search_app/presentation/views/widget/photo_card.dart';
 
@@ -81,10 +82,11 @@ class _PhotoViewerScreenState extends State<PhotoViewerScreen> {
                               child: IconButton(
                                 onPressed: () {
                                   SaveImageToGallery().save(
-                                    dataRecived.photos[index2].url!,
-                                    context,
-                                    constrain,
-                                  );
+                                      savePhoto: SavePhoto(
+                                    url: dataRecived.photos[index2].url!,
+                                    context: context,
+                                    size: constrain,
+                                  ));
                                 },
                                 icon: Icon(
                                   Icons.download,

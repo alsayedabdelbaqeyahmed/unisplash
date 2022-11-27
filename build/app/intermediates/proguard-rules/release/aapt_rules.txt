@@ -1,8 +1,0 @@
-# Referenced at /Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:15
--keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at /Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:21
--keep class com.sayed.photo_search_app.MainActivity { <init>(); }
-# Referenced at /Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:15
--keep class io.flutter.app.FlutterApplication { <init>(); }
-# Referenced at /Users/sayed/Desktop/Flutter_App/photo_search_app/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:63
--keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }

@@ -18,55 +18,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jnFMSdAAB4NEGEGlsI+tKQtWVAQ=
+		MgbInNj9BXIOfe04/SyefzkC0e4=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		R3+k6e81l6af8oJ8HBDu4Ril0/w=
+		BEgqwBuJ6ZKWAzLP9KV4k5Nmafc=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		R3+k6e81l6af8oJ8HBDu4Ril0/w=
+		BEgqwBuJ6ZKWAzLP9KV4k5Nmafc=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		yQnxD69XktFR4ctv252hRW6ImDQ=
+		1Jd8BRvH8/Pbil1o4Zbqk7XX1KE=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		yQnxD69XktFR4ctv252hRW6ImDQ=
+		1Jd8BRvH8/Pbil1o4Zbqk7XX1KE=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mD3T7/n0ZIcV+pBsfeS+PqhvvSA=
+		12jxj61sOht3jCt/3tdJGO2W+s8=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uqSzFmu67c2zPP8fngE+JKyCGyk=
+		T/JcJqqGWhwSzUip9kWRTxI71eI=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		mD3T7/n0ZIcV+pBsfeS+PqhvvSA=
+		12jxj61sOht3jCt/3tdJGO2W+s8=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		uqSzFmu67c2zPP8fngE+JKyCGyk=
+		T/JcJqqGWhwSzUip9kWRTxI71eI=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		PP044XnM+RTvdJNxTIGXkSD+kcw=
+		IeHrYnqiDPo2z7x2b8B8AtKRTdI=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LsAlrrnqK8KIpolEjGZDpL+7Ehs=
+		/KfnjhSyWv6N5QokE7r23LhxZVo=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		PP044XnM+RTvdJNxTIGXkSD+kcw=
+		IeHrYnqiDPo2z7x2b8B8AtKRTdI=
 		</data>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		LsAlrrnqK8KIpolEjGZDpL+7Ehs=
+		/KfnjhSyWv6N5QokE7r23LhxZVo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,6 +77,10 @@
 	<dict>
 		<key>Headers/ImageGallerySaverPlugin.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			XQrjFz2TRt6cYQu+s38Mz+w+sI8=
+			</data>
 			<key>hash2</key>
 			<data>
 			9M89669oB3PIDQQ8osipDTEmBQxXINF7dDboIPUhdYI=
@@ -84,6 +88,10 @@
 		</dict>
 		<key>Headers/image_gallery_saver-Swift.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			WAScLzbj7Pwt5qkz4O1Hht0sAlI=
+			</data>
 			<key>hash2</key>
 			<data>
 			1FXtVLW2LWMZShiHZXytvgnZ2HYaeZ0kfLnWkg7WmNA=
@@ -91,6 +99,10 @@
 		</dict>
 		<key>Headers/image_gallery_saver-umbrella.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			gLPnatwZkisiHUu1EgMecNVGaas=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZTMZ/o+xjyEjWF7Z2YAQymsU9WgSllOJi0Y+WoxUaH4=
@@ -98,90 +110,142 @@
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BEgqwBuJ6ZKWAzLP9KV4k5Nmafc=
+			</data>
 			<key>hash2</key>
 			<data>
-			srR7eb59h3baU9/78iitexmTeTWShw1Irnz0ssRkW0w=
+			yIy48ohbzXNr3LvpQx8j/uxJ3uT0EzBbrxbaCENEqI0=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BEgqwBuJ6ZKWAzLP9KV4k5Nmafc=
+			</data>
 			<key>hash2</key>
 			<data>
-			srR7eb59h3baU9/78iitexmTeTWShw1Irnz0ssRkW0w=
+			yIy48ohbzXNr3LvpQx8j/uxJ3uT0EzBbrxbaCENEqI0=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1Jd8BRvH8/Pbil1o4Zbqk7XX1KE=
+			</data>
 			<key>hash2</key>
 			<data>
-			L0dLxZpWvAa7ijVXPVMs/JqFwnqfJVO1jEkl9J1x4/8=
+			652fOycz5dDgSp/coH33X4Uaxl7m9enXJdPmaRq5WHk=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1Jd8BRvH8/Pbil1o4Zbqk7XX1KE=
+			</data>
 			<key>hash2</key>
 			<data>
-			L0dLxZpWvAa7ijVXPVMs/JqFwnqfJVO1jEkl9J1x4/8=
+			652fOycz5dDgSp/coH33X4Uaxl7m9enXJdPmaRq5WHk=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			12jxj61sOht3jCt/3tdJGO2W+s8=
+			</data>
 			<key>hash2</key>
 			<data>
-			mHE56yhLa1pL2nVicnh4fVvKiongYY2/TF/esbjk3gY=
+			9M8l3pFrqdNlHJjsr0kCoCXz+Z17wrWCea3igzyeEK0=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			T/JcJqqGWhwSzUip9kWRTxI71eI=
+			</data>
 			<key>hash2</key>
 			<data>
-			XsAvosnINtozBbGrb8KUleM48WO2n8JyjgLPOmgrpeQ=
+			PFX0y9XQILUHE6PfXUxqj1HAbRYWqGI6694zJNXv55I=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			12jxj61sOht3jCt/3tdJGO2W+s8=
+			</data>
 			<key>hash2</key>
 			<data>
-			mHE56yhLa1pL2nVicnh4fVvKiongYY2/TF/esbjk3gY=
+			9M8l3pFrqdNlHJjsr0kCoCXz+Z17wrWCea3igzyeEK0=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/arm64.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			T/JcJqqGWhwSzUip9kWRTxI71eI=
+			</data>
 			<key>hash2</key>
 			<data>
-			XsAvosnINtozBbGrb8KUleM48WO2n8JyjgLPOmgrpeQ=
+			PFX0y9XQILUHE6PfXUxqj1HAbRYWqGI6694zJNXv55I=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IeHrYnqiDPo2z7x2b8B8AtKRTdI=
+			</data>
 			<key>hash2</key>
 			<data>
-			E6kRxMtzEPcgTuLelepmA8HQEmdYiw6UzdrB7tmuJB4=
+			BugWICr0B6HNlMaa/g3+3uamuix5PARRxcJ+uNvZNUw=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/KfnjhSyWv6N5QokE7r23LhxZVo=
+			</data>
 			<key>hash2</key>
 			<data>
-			V2XmGUbjn1Hg9WjaokZjZkIjRny974QG6EptJVPs9DA=
+			zhzpaiJoPs9QYF7qYJgLQHuTjhX5UGfsMdcQ4hKx6UA=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IeHrYnqiDPo2z7x2b8B8AtKRTdI=
+			</data>
 			<key>hash2</key>
 			<data>
-			E6kRxMtzEPcgTuLelepmA8HQEmdYiw6UzdrB7tmuJB4=
+			BugWICr0B6HNlMaa/g3+3uamuix5PARRxcJ+uNvZNUw=
 			</data>
 		</dict>
 		<key>Modules/image_gallery_saver.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/KfnjhSyWv6N5QokE7r23LhxZVo=
+			</data>
 			<key>hash2</key>
 			<data>
-			V2XmGUbjn1Hg9WjaokZjZkIjRny974QG6EptJVPs9DA=
+			zhzpaiJoPs9QYF7qYJgLQHuTjhX5UGfsMdcQ4hKx6UA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			q2UTGDkA5i+pnqEJOlUsphlLPdk=
+			</data>
 			<key>hash2</key>
 			<data>
 			37J2CbQl95ecglVIHY1b+FuKcXb5JaJJp1VCyM4CHDo=

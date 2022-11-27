@@ -11,7 +11,7 @@ class UseCaseGetPhoto {
 
   final BaseGetPhotoRepo? baseGetPhotoRepo = GetPhotoRepoisotry();
 
-  Future<PhotoResponce> useCaseGetPhoto({Photo? query}) async {
+  Future<List<PhotoResponce>> useCaseGetPhoto({Photo? query}) async {
     final result =
         UseCaseGetPhoto().baseGetPhotoRepo!.baseGetPhotoRepo(query: query);
     return result;

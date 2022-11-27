@@ -11,7 +11,7 @@ class GetPhotoRepoisotry extends BaseGetPhotoRepo {
 
   final RemoteDataSource _remoteDataSource = RemoteDataSourceHelper();
   @override
-  Future<PhotoResponce> baseGetPhotoRepo({Photo? query}) async {
+  Future<List<PhotoResponce>> baseGetPhotoRepo({Photo? query}) async {
     final result =
         await _remoteDataSource.remoteDataGetPhoto(query: query!.query);
     return result;

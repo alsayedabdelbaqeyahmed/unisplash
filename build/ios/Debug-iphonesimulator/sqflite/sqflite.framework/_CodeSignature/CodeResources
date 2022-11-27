@@ -4,21 +4,33 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/SqfliteCursor.h</key>
+		<data>
+		Unx7SCmmywV7IYZ2IZ0JTaMVqs8=
+		</data>
+		<key>Headers/SqfliteDatabase.h</key>
+		<data>
+		ZMr/40b6AjfTrfwYicek+N3GN78=
+		</data>
+		<key>Headers/SqfliteImport.h</key>
+		<data>
+		0+chb7bAcvKQkVLo6qNsaTSMCBQ=
+		</data>
 		<key>Headers/SqfliteOperation.h</key>
 		<data>
-		1qs2VByExmwhuAfqFnVLlT9i6fc=
+		7gk9HrdbOHiUaSqWA4qc7Ete6Es=
 		</data>
 		<key>Headers/SqflitePlugin.h</key>
 		<data>
-		9gOu5wEOiDirJMUPhYF4HZPl+Kk=
+		WfoJ6bATN5zlx5MifSdDLVD1kw0=
 		</data>
 		<key>Headers/sqflite-umbrella.h</key>
 		<data>
-		E3TVHS7RDLLAzmYt3bdV88l6txQ=
+		0ZAjEchHuptdKCLS4EOvUKhkIIY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8jMQpuV2guaN1HYcg8GIO5KjGGs=
+		Dij3Zb8ahP1Kt3g2SkOMG0dAZgo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,29 +39,78 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/SqfliteOperation.h</key>
+		<key>Headers/SqfliteCursor.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Unx7SCmmywV7IYZ2IZ0JTaMVqs8=
+			</data>
 			<key>hash2</key>
 			<data>
-			GquXwXlgcfo8iV2Y0H0x1BHvwtKSXPRlIg13rUkmhvM=
+			lj2tDvcp0DJfI7AuSg7aSnniaLaZuBYKJ7KOpMAvf5k=
+			</data>
+		</dict>
+		<key>Headers/SqfliteDatabase.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZMr/40b6AjfTrfwYicek+N3GN78=
+			</data>
+			<key>hash2</key>
+			<data>
+			LUl4XJonNVXb8IjBiUdKS24KTcYlP8ySeuTkWPHObN8=
+			</data>
+		</dict>
+		<key>Headers/SqfliteImport.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0+chb7bAcvKQkVLo6qNsaTSMCBQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ivZxqPJBeID4R70sM/BYWsK7MWssIy5FjA4Yxix2XWI=
+			</data>
+		</dict>
+		<key>Headers/SqfliteOperation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7gk9HrdbOHiUaSqWA4qc7Ete6Es=
+			</data>
+			<key>hash2</key>
+			<data>
+			ieh72KR0mz9ntt6NFYKB7/7ixoorLNOo71EhoMLlAsQ=
 			</data>
 		</dict>
 		<key>Headers/SqflitePlugin.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			WfoJ6bATN5zlx5MifSdDLVD1kw0=
+			</data>
 			<key>hash2</key>
 			<data>
-			0jDgwcRQv/8l8mRTtMnmX2B0mBs0wFqfo9rFgGWIqoM=
+			gDEuJMfPoA/2viIcFPTdKZi5aSoyCGelC9SC9zfyJDg=
 			</data>
 		</dict>
 		<key>Headers/sqflite-umbrella.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0ZAjEchHuptdKCLS4EOvUKhkIIY=
+			</data>
 			<key>hash2</key>
 			<data>
-			zZR8/IbDBVrsS/uLyFFstPrhnSynrsqpqb13gPgNF6E=
+			6tUnqMjmSvmu7RM3OORjcQO4g7An+vS62vOVpiC11Ag=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			F7MvTB7XfsuHpBENN/M7Y2zXO3o=
+			</data>
 			<key>hash2</key>
 			<data>
 			eEumEfhgIg+GvWnOVvd3J3xG3anuAKsIwoWGcWxjN28=
