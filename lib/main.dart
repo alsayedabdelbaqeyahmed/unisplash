@@ -4,7 +4,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:photo_search_app/presentation/controller/dark_theme.dart';
-import 'package:photo_search_app/presentation/controller/myTheme.dart';
+import 'package:photo_search_app/presentation/style/app_theme.dart';
 
 import 'package:photo_search_app/presentation/views/screens/home.dart';
 import 'package:photo_search_app/presentation/views/screens/photo_screen.dart';
