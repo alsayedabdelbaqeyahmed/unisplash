@@ -1,44 +1,75 @@
-import 'dart:convert';
+import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
+import 'package:photo_search_app/app/network/error_exception.dart';
+import 'package:photo_search_app/app/network/error_models.dart';
 
 import 'package:photo_search_app/app/utils/api_constants.dart';
 import 'package:photo_search_app/app/utils/constants.dart';
 import 'package:photo_search_app/app/utils/getIgnored.dart';
 import 'package:photo_search_app/data/models/photo_responce.dart';
-import 'package:http/http.dart' as http;
 
 abstract class RemoteDataSource {
-  Future<List<PhotoResponceModel>> remoteDataGetPhoto({String? query});
+  Future<List<PhotoResponceModel>> remoteDataGetPhoto(
+      {String? query, required BuildContext? context});
 }
 
-class RemoteDataSourceHelper extends RemoteDataSource {
-  RemoteDataSourceHelper._instance();
-  static final RemoteDataSourceHelper remoteDataSourceHelper =
-      RemoteDataSourceHelper._instance();
-  factory RemoteDataSourceHelper() => remoteDataSourceHelper;
+class RemoteDataSourceGetPhoto extends RemoteDataSource {
+  RemoteDataSourceGetPhoto._instance();
+  static final RemoteDataSourceGetPhoto remoteDataSourceHelper =
+      RemoteDataSourceGetPhoto._instance();
+  factory RemoteDataSourceGetPhoto() => remoteDataSourceHelper;
 
+  void onInt() async {}
   @override
-  Future<List<PhotoResponceModel>> remoteDataGetPhoto({String? query}) async {
+  Future<List<PhotoResponceModel>> remoteDataGetPhoto(
+      {String? query, required BuildContext? context}) async {
     List<PhotoResponceModel>? photoResults;
     final url =
         '${AppApiConstants.api}/${AppApiConstants.apiMethos}?client_id=$unSplashapiKey&query=$query&page=10&per_page=100';
     try {
-      final response = await http.get(Uri.parse(url));
+      final response = await Dio().get(url);
       print(response.statusCode);
 
       if (response.statusCode == 200) {
-        final Map<String, dynamic> data = jsonDecode(response.body);
+        final Map<String, dynamic> data = response.data;
         print(data[AppConstants.results]);
         List<dynamic> result = data[AppConstants.results];
         List<PhotoResponceModel> data2 =
             result.map((e) => PhotoResponceModel.fromJson(e)).toList();
         photoResults = data2;
       } else {
-        print(response.statusCode);
+        print(response.data[AppConstants.errors]);
+        ServerException(
+          errorModel: ErrorModel.fromJson(
+            response.data[AppConstants.errors],
+          ),
+        );
       }
       return photoResults!;
     } catch (e) {
-      print('error is ${e.toString()}');
-      throw (e.toString());
+      {
+        throw showDialog(
+            context: context!,
+            builder: ((context) => AlertDialog(
+                  alignment: Alignment.center,
+                  title: Text(
+                    'error',
+                  ),
+                  content: Text(
+                    'اشحن الباقه بطل بخل ',
+                    textDirection: TextDirection.rtl,
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: (() => Navigator.pop(context)),
+                      child: Text(
+                        'try again',
+                        textDirection: TextDirection.rtl,
+                      ),
+                    )
+                  ],
+                )));
+      }
     }
   }
 }

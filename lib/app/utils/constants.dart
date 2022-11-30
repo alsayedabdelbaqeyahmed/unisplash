@@ -11,4 +11,5 @@ class AppConstants {
   static const String description = 'description';
   static const String user = 'user';
   static const String results = 'results';
+  static const String errors = 'errors';
 }

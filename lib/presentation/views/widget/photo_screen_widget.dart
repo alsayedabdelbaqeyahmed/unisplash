@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:photo_search_app/domain/entities/photo_entites.dart';
+import 'package:photo_search_app/domain/entities/photo_responce_entites.dart';
 
 import 'package:photo_search_app/presentation/controller/search_photo_provider.dart';
 import 'package:photo_search_app/presentation/router/app_routes_const.dart';
@@ -112,28 +113,35 @@ class _PhotoScreenWidgetState extends State<PhotoScreenWidget> {
 
   Widget photoGird() {
     final data = Provider.of<SearchPhotoProvider>(context, listen: false);
-    return FutureBuilder(
+    return FutureBuilder<List<PhotoResponce>>(
       future: data.getPhotoController(
-        query: Photo(query: _query),
-      ),
+          query: Photo(query: _query), context: context),
       builder: (ctx, snapShot) {
-        return GridView.builder(
-          shrinkWrap: widget.shrankWrap!,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            childAspectRatio: widget.childAspectRatio!,
-            mainAxisSpacing: widget.mainAxisSpacing!,
-            crossAxisSpacing: widget.crossAxisSpacing!,
-            crossAxisCount: widget.crossAxissAccount!,
-          ),
-          itemBuilder: (ctx, index) {
-            return PhotoCard(
-              photo: data.photo![index],
-              photos: data.photo!,
-              index: index,
-            );
-          },
-          itemCount: data.photo!.length,
-        );
+        return snapShot.hasError == true
+            ? Center(
+                child: CircularProgressIndicator(),
+              )
+            : snapShot.connectionState == ConnectionState.waiting
+                ? Center(
+                    child: CircularProgressIndicator(),
+                  )
+                : GridView.builder(
+                    shrinkWrap: widget.shrankWrap!,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      childAspectRatio: widget.childAspectRatio!,
+                      mainAxisSpacing: widget.mainAxisSpacing!,
+                      crossAxisSpacing: widget.crossAxisSpacing!,
+                      crossAxisCount: widget.crossAxissAccount!,
+                    ),
+                    itemBuilder: (ctx, index) {
+                      return PhotoCard(
+                        photo: snapShot.data![index],
+                        photos: snapShot.data!,
+                        index: index,
+                      );
+                    },
+                    itemCount: snapShot.data!.length,
+                  );
       },
     );
   }

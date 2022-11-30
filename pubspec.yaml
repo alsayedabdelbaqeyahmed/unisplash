@@ -26,7 +26,6 @@ dependencies:
   cached_network_image:
   cupertino_icons:
   equatable:
-  http:
   provider:
   url_launcher:
   path_provider:
@@ -34,6 +33,7 @@ dependencies:
   image_gallery_saver:
   permission_handler:
   dio:
+  dartz:
 
 dev_dependencies:
   flutter_test:
