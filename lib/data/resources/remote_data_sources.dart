@@ -5,7 +5,7 @@ import 'package:photo_search_app/app/network/error_models.dart';
 
 import 'package:photo_search_app/app/utils/api_constants.dart';
 import 'package:photo_search_app/app/utils/constants.dart';
-import 'package:photo_search_app/app/utils/getIgnored.dart';
+import 'package:photo_search_app/app/utils/api_key.dart';
 import 'package:photo_search_app/data/models/photo_responce.dart';
 
 abstract class RemoteDataSource {
@@ -48,6 +48,7 @@ class RemoteDataSourceGetPhoto extends RemoteDataSource {
       return photoResults!;
     } catch (e) {
       {
+        print(e.toString());
         throw showDialog(
             context: context!,
             builder: ((context) => AlertDialog(
@@ -56,7 +57,7 @@ class RemoteDataSourceGetPhoto extends RemoteDataSource {
                     'error',
                   ),
                   content: Text(
-                    'اشحن الباقه بطل بخل ',
+                    'please check your connection \n if it is work please wait till we fix the error',
                     textDirection: TextDirection.rtl,
                   ),
                   actions: [

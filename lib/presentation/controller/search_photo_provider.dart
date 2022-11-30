@@ -34,31 +34,34 @@ class SearchPhotoProvider with ChangeNotifier {
                     ],
                   )),
             ), (r) {
-      r.isEmpty
-          ? showDialog(
-              context: context!,
-              builder: ((context) => AlertDialog(
-                    alignment: Alignment.center,
-                    title: Text(
-                      'احنا هنهزر',
+      if (r.isEmpty) {
+        _photo = [];
+        showDialog(
+          context: context!,
+          builder: ((context) => AlertDialog(
+                alignment: Alignment.center,
+                title: Text(
+                  'احنا هنهزر',
+                  textDirection: TextDirection.rtl,
+                ),
+                content: Text(
+                  'اكتب الاسم عدل متقرفناش معاك ',
+                  textDirection: TextDirection.rtl,
+                ),
+                actions: [
+                  TextButton(
+                    onPressed: (() => Navigator.pop(context)),
+                    child: Text(
+                      'امشي يلا',
                       textDirection: TextDirection.rtl,
                     ),
-                    content: Text(
-                      'اكتب الاسم عدل متقرفناش معاك ',
-                      textDirection: TextDirection.rtl,
-                    ),
-                    actions: [
-                      TextButton(
-                        onPressed: (() => Navigator.pop(context)),
-                        child: Text(
-                          'امشي يلا',
-                          textDirection: TextDirection.rtl,
-                        ),
-                      )
-                    ],
-                  )),
-            )
-          : _photo = r;
+                  )
+                ],
+              )),
+        );
+      } else {
+        _photo = r;
+      }
     });
 
     notifyListeners();

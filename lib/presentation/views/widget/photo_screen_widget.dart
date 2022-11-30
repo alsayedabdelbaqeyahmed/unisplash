@@ -117,10 +117,8 @@ class _PhotoScreenWidgetState extends State<PhotoScreenWidget> {
       future: data.getPhotoController(
           query: Photo(query: _query), context: context),
       builder: (ctx, snapShot) {
-        return snapShot.hasError == true
-            ? Center(
-                child: CircularProgressIndicator(),
-              )
+        return snapShot.error != null
+            ? Center(child: CircularProgressIndicator())
             : snapShot.connectionState == ConnectionState.waiting
                 ? Center(
                     child: CircularProgressIndicator(),

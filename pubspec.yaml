@@ -34,6 +34,7 @@ dependencies:
   permission_handler:
   dio:
   dartz:
+  internet_connection_checker:
 
 dev_dependencies:
   flutter_test:
