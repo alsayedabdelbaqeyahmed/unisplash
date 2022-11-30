@@ -41,11 +41,11 @@ class SearchPhotoProvider with ChangeNotifier {
           builder: ((context) => AlertDialog(
                 alignment: Alignment.center,
                 title: Text(
-                  'احنا هنهزر',
+                  'Attention',
                   textDirection: TextDirection.rtl,
                 ),
                 content: Text(
-                  'اكتب الاسم عدل متقرفناش معاك ',
+                  'please enter a valid name',
                   textDirection: TextDirection.rtl,
                 ),
                 actions: [
