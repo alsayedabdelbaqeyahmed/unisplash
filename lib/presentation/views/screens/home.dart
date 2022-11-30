@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
                 height: constrain.maxHeight,
                 width: constrain.maxWidth,
                 child: Image(
-                  image: AssetImage(AppAssets.unsplash),
+                  image: AssetImage(AppAssets.splash),
                   fit: BoxFit.cover,
                 ),
               ),

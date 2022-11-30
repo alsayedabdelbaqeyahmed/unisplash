@@ -6,8 +6,8 @@
     <application
         android:requestLegacyExternalStorage="true"
         android:name="${applicationName}"
-        android:label="unsplash"
-        android:icon="@mipmap/unsplash_dark">
+        android:label="splash"
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
