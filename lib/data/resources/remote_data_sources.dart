@@ -19,7 +19,6 @@ class RemoteDataSourceGetPhoto extends RemoteDataSource {
       RemoteDataSourceGetPhoto._instance();
   factory RemoteDataSourceGetPhoto() => remoteDataSourceHelper;
 
-  void onInt() async {}
   @override
   Future<List<PhotoResponceModel>> remoteDataGetPhoto(
       {String? query, required BuildContext? context}) async {
